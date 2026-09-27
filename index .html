@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yasuhiro Aoki - Portfolio</title>
+  
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+ 
+  <header class="bg-gradient-to-r from-blue-700 to-indigo-800 text-white py-20 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">青木 康裕 (Yasuhiro Aoki)</h1>
+      <p class="text-xl md:text-2xl font-light opacity-90">経済学の視点と技術を掛け合わせるWebエンジニア志望</p>
+    </div>
+  </header>
+
+  
+  <section class="py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-8 border-b-4 border-blue-600 inline-block pb-2 mx-auto flex justify-center w-max">About Me</h2>
+    <div class="bg-white p-8 rounded-lg shadow-md leading-relaxed text-gray-700">
+      <p class="mb-4">
+        青山学院大学 経済学部 現代経済デザイン学科に在籍しながら、プログラミングコミュニティPOSSEの副代表としてWeb開発とチームマネジメントを学んでいます。
+      </p>
+      <p>
+        静岡から上京し、現在はフロントエンドからバックエンドまで幅広く技術を習得中です。休日は福岡ソフトバンクホークスの試合観戦を楽しむ。
+      </p>
+    </div>
+  </section>
+
+
+  <section class="bg-gray-100 py-16 px-6">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-10 border-b-4 border-blue-600 inline-block pb-2 mx-auto flex justify-center w-max">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+       
+        <div class="bg-white p-6 rounded-lg shadow hover:-translate-y-2 hover:shadow-xl transition-all duration-300 text-center border-t-4 border-orange-500">
+          <h3 class="font-bold text-xl mb-2 text-orange-600">HTML / CSS</h3>
+          <p class="text-sm text-gray-600">Tailwind CSSを活用したレスポンシブなモダンレイアウトの実装</p>
+        </div>
+
+        
+        <div class="bg-white p-6 rounded-lg shadow hover:-translate-y-2 hover:shadow-xl transition-all duration-300 text-center border-t-4 border-yellow-400">
+          <h3 class="font-bold text-xl mb-2 text-yellow-500">JavaScript</h3>
+          <p class="text-sm text-gray-600">DOM操作、API連携、非同期処理を用いた動的なUI構築</p>
+        </div>
+
+       
+        <div class="bg-white p-6 rounded-lg shadow hover:-translate-y-2 hover:shadow-xl transition-all duration-300 text-center border-t-4 border-gray-800">
+          <h3 class="font-bold text-xl mb-2 text-gray-800">Git / GitHub</h3>
+          <p class="text-sm text-gray-600">チーム開発でのブランチ運用、Issue管理、Pull Request作成</p>
+        </div>
+
+       
+        <div class="bg-white p-6 rounded-lg shadow hover:-translate-y-2 hover:shadow-xl transition-all duration-300 text-center border-t-4 border-indigo-500">
+          <h3 class="font-bold text-xl mb-2 text-indigo-500">PHP / Laravel</h3>
+          <p class="text-sm text-gray-600">サーバーサイドの基礎とデータベース連携の学習</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10 border-b-4 border-blue-600 inline-block pb-2 mx-auto flex justify-center w-max">Works</h2>
+    
+    
+    <div class="splide" id="portfolio-splide">
+      <div class="splide__track">
+        <ul class="splide__list">
+          
+          
+          <li class="splide__slide px-3">
+           
+            <div class="relative overflow-hidden group rounded-lg shadow-md cursor-pointer bg-white">
+             
+              <img src="https://picsum.photos/600/400?random=1" alt="作品1" class="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110">
+              
+              <div class="p-4 relative z-10 bg-white">
+                <h3 class="font-bold text-lg">サークルランディングページ</h3>
+                <p class="text-sm text-gray-500">ハッカソンでチーム開発した紹介サイト</p>
+              </div>
+
+             
+              <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center z-20">
+                <span class="text-white font-bold text-lg border-2 border-white px-6 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">詳細を見る</span>
+              </div>
+            </div>
+          </li>
+
+          
+          <li class="splide__slide px-3">
+            <div class="relative overflow-hidden group rounded-lg shadow-md cursor-pointer bg-white">
+              <img src="https://picsum.photos/600/400?random=2" alt="作品2" class="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110">
+              <div class="p-4 relative z-10 bg-white">
+                <h3 class="font-bold text-lg">GitHub API ユーザー検索</h3>
+                <p class="text-sm text-gray-500">非同期処理を用いたユーザー情報表示ツール</p>
+              </div>
+              <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center z-20">
+                <span class="text-white font-bold text-lg border-2 border-white px-6 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">詳細を見る</span>
+              </div>
+            </div>
+          </li>
+
+          
+          <li class="splide__slide px-3">
+            <div class="relative overflow-hidden group rounded-lg shadow-md cursor-pointer bg-white">
+              <img src="https://picsum.photos/600/400?random=3" alt="作品3" class="w-full h-64 object-cover transition-all duration-500 group-hover:scale-110">
+              <div class="p-4 relative z-10 bg-white">
+                <h3 class="font-bold text-lg">自己紹介プロフィールサイト</h3>
+                <p class="text-sm text-gray-500">GitHub Pagesを利用して公開した個人ページ</p>
+              </div>
+              <div class="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center z-20">
+                <span class="text-white font-bold text-lg border-2 border-white px-6 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-all duration-300">詳細を見る</span>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-12">
+    <p>&copy; 2026 Yasuhiro Aoki. All rights reserved.</p>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('#portfolio-splide', {
+        type: 'loop',        
+        autoplay: true,      
+        interval: 3000,      
+        perPage: 2,          
+        gap: '1rem',
+        breakpoints: {
+          768: {
+            perPage: 1,      
+          }
+        }
+      }).mount();
+    });
+  </script>
+</body>
+</html>
